@@ -8,8 +8,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BulkyBook.Controllers
+namespace BulkyBook.Areas.Customer.Controllers
 {
+    //This must be explicitly defined
+    [Area("Customer")]
     //"Home" in "HomeController" matches up with the "Views" Directory.
     //Must always have "Controller" after whatever the name is going to be
     public class HomeController : Controller
