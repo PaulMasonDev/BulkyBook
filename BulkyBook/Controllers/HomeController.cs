@@ -1,4 +1,5 @@
 ﻿using BulkyBook.Models;
+using BulkyBook.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,6 +10,8 @@ using System.Threading.Tasks;
 
 namespace BulkyBook.Controllers
 {
+    //"Home" in "HomeController" matches up with the "Views" Directory.
+    //Must always have "Controller" after whatever the name is going to be
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
